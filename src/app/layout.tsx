@@ -21,9 +21,12 @@ export default function RootLayout({
   return (
     <AuthProvider>
       <html lang="en">
-        <ToastContainer />
+       
 
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+           <ToastContainer />
+          {children}
+        </body>
       </html>
     </AuthProvider>
   );
